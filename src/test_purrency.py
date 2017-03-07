@@ -10,7 +10,7 @@ from decimal import Decimal
 class TestPurrency(TestCase):
 
     def setUp(self):
-        self.expected_test_dollar = {'amount': Decimal(200.0), 'currency': '$'}
+        self.expected_test_dollar = {'amount': Decimal(200.0), 'symbol': '$'}
         test_dollar = '$200.00'
 
         self.purr = Purrency(test_dollar)
