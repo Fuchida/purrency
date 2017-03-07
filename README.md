@@ -13,7 +13,7 @@ prcy = Purrency('$200')
 
 prcy.parse()
 
->> {'amount': Decimal(200.0), 'currency': '$'}
+>> {'amount': Decimal(200.0), 'symbol': '$'}
 
 ```
 
