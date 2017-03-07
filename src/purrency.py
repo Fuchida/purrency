@@ -21,4 +21,4 @@ class Purrency(object):
         #  TODO: Need to figure out how to implement regex without the .replace()
         currency = sub(r'[^\D]', '', self.denomination).replace(',', '').replace('.', '')
         return {'amount': value,
-                'currency': currency}
+                'symbol': currency}
