@@ -11,8 +11,7 @@ from purrency import Purrency
 
 prcy = Purrency('$200')
 
-prcy.parse()
-
+prcy.parsed
 >> {'amount': Decimal(200.0), 'symbol': '$'}
 
 ```
