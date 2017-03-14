@@ -14,7 +14,7 @@ class TestPurrency(TestCase):
         test_dollar = '$200.00'
 
         self.purr = Purrency(test_dollar)
-        self.parsed_dollar = self.purr.parse()
+        self.parsed_dollar = self.purr.parsed
 
     def test_dollar(self):
         """
