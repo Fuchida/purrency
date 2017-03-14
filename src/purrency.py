@@ -6,7 +6,7 @@ Simple currency parser with Python
 from re import sub
 from decimal import Decimal
 
-__version__ = '0.2'
+__version__ = '0.3'
 
 
 class Purrency(object):
