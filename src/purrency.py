@@ -14,11 +14,12 @@ class Purrency(object):
 
     def __init__(self, denomination):
         self.denomination = denomination
+        self.parsed = self.parse(self.denomination)
 
-    def parse(self):
-        value = Decimal(sub(r'[^\d.]', '', self.denomination))
+    def parse(self, denomination):
+        value = Decimal(sub(r'[^\d.]', '', denomination))
 
         #  TODO: Need to figure out how to implement regex without the .replace()
-        currency = sub(r'[^\D]', '', self.denomination).replace(',', '').replace('.', '')
+        currency = sub(r'[^\D]', '', denomination).replace(',', '').replace('.', '')
         return {'amount': value,
                 'symbol': currency}
